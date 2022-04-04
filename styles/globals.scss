@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "../components/Slider/Slider.scss";
+@import "../components/Footer/Footer.scss";
+@import "../components/Header/Header.scss";
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    /*-----Scrollbar Start-----*/
+    &::-webkit-scrollbar {
+        max-width: 1rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgb(200, 200, 200);
+
+        &:hover {
+            background: rgb(171, 171, 171);
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: linear-gradient(rgb(229, 229, 229), rgb(241, 241, 241));
+    }
+
+    /*-----Scrollbar End-----*/
+    /*-----Selection Start-----*/
+    ::selection {
+        color: #fff;
+        background-color: rgb(58, 133, 255);
+    }
+
+    ::-webkit-selection {
+        color: #fff;
+        background-color: rgb(58, 133, 255);
+    }
+
+    ::-moz-selection {
+        color: #fff;
+        background-color: rgb(58, 133, 255);
+    }
+
+    /*-----Selection End-----*/
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
